@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070912">
+  <meta name="description" content="Welcome to the official MaskManUG universe. Watch GTA RP live streams, discover new videos, and get notified when MaskManUG goes live.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MaskManUG • Stream Hub">
+  <meta property="og:description" content="Good games. Wild stories. Better people. Join MaskManUG live.">
+  <meta property="og:image" content="icons/icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MaskManUG">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>MaskManUG — The Stream Hub</title>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="MaskManUG home">
+      <span class="brand-emblem">M<span>M</span><i></i></span>
+      <span class="brand-name">MASKMAN<span>UG</span><small>THE STREAM HUB</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#watch" class="nav-link active">THE STREAM</a>
+      <a href="#videos" class="nav-link">LATEST DROPS</a>
+      <a href="#community" class="nav-link">THE COMMUNITY</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="header-notify" type="button" title="Live alerts" aria-label="Enable notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg></button>
+      <button class="button button-outline header-install" id="install-header" type="button">+ INSTALL APP</button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+    <a href="#watch">THE STREAM</a><a href="#videos">LATEST DROPS</a><a href="#community">THE COMMUNITY</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> WELCOME TO THE STREAMVERSE <span class="eyebrow-spark">✳</span></div>
+        <h1 id="hero-title">YOUR<br>DAILY DOSE OF <span class="gradient-title">CHAOS<span class="dot">.</span></span></h1>
+        <p class="hero-sub">Unscripted stories. Legendary GTA RP moments. A community that makes every stream worth showing up for. <strong>This is MaskManUG.</strong></p>
+        <div class="hero-actions">
+          <a id="hero-watch" class="button button-primary" href="https://www.youtube.com/@MaskManUG/live" target="_blank" rel="noopener noreferrer"><span class="play-symbol">▶</span> CHECK LIVE STREAM <span class="button-arrow">↗</span></a>
+          <button id="hero-alerts" class="button button-muted" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg> GET LIVE ALERTS</button>
+        </div>
+        <div class="hero-social-proof">
+          <div class="stacked-icons"><span>M</span><span>U</span><span>G</span></div>
+          <div><strong>REAL PEOPLE. REAL VIBES.</strong><small>Pull up. You belong here.</small></div>
+          <div class="proof-divider"></div>
+          <div class="youtube-proof"><span id="subscriber-count">GAMING</span><small>CREATOR</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="channel-avatar-frame" id="avatar-frame" hidden><img id="channel-avatar" src="" alt=""></div>
+        <div class="art-glow"></div>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <span class="art-code art-code-one">STREAM // ONLINE CULTURE</span>
+        <span class="art-code art-code-two">MM_001 / UNFILTERED</span>
+        <div class="art-mass"><span class="art-mm">MM<span>UG</span></span><span class="art-stamp">PLAY HARD. STAY GORIB.</span></div>
+        <div class="art-floating art-floating-one"><span>●</span> STREAMING ENERGY</div>
+        <div class="art-floating art-floating-two">LEVEL: UNLIMITED <span>↗</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE <span class="bounce">↓</span></span><span class="hero-index">01 / THE UNIVERSE</span></div>
+    </section>
+
+    <div class="marquee" aria-label="MaskManUG motto"><div class="marquee-track"><span>NO SCRIPT <b>✳</b> ALL VIBES <b>✳</b> GTA ROLEPLAY <b>✳</b> MASKMANUG <b>✳</b> GOOD PEOPLE <b>✳</b> BIG MOMENTS <b>✳</b></span><span aria-hidden="true">NO SCRIPT <b>✳</b> ALL VIBES <b>✳</b> GTA ROLEPLAY <b>✳</b> MASKMANUG <b>✳</b> GOOD PEOPLE <b>✳</b> BIG MOMENTS <b>✳</b></span></div></div>
+
+    <section class="stream-section container" id="watch">
+      <div class="section-heading">
+        <div><span class="section-kicker">// THE MAIN EVENT</span><h2>THE <em>STREAM</em><span class="small-star">✳</span></h2></div>
+        <div id="stream-status" class="status-chip status-loading"><span class="status-led"></span><span id="status-text">CHECKING CHANNEL</span></div>
+      </div>
+      <div class="stream-layout">
+        <article class="video-panel">
+          <div class="video-frame" id="video-frame">
+            <div class="stream-poster" id="stream-poster">
+              <div class="poster-rays"></div><div class="poster-brand">MM<span>UG.</span></div>
+              <div class="poster-overlay"><span id="poster-kicker">STREAM HQ // MASKMANUG</span><h3 id="poster-title">THE BEST MOMENTS<br>ARE UNSCRIPTED.</h3><p id="poster-subtitle">Your next favorite stream starts here.</p></div>
+              <div class="poster-action"><a id="poster-link" class="round-play" href="https://www.youtube.com/@MaskManUG/live" target="_blank" rel="noopener noreferrer" aria-label="Open channel live stream">▶</a></div>
+            </div>
+          </div>
+          <div class="player-info"><div class="player-info-left"><span id="stream-category" class="category-tag">GTA V ROLEPLAY</span><h3 id="stream-title">Catch the next MaskManUG stream</h3><p id="stream-description">The next adventure is always one click away.</p></div><a id="youtube-watch-link" class="player-open" href="https://www.youtube.com/@MaskManUG/live" target="_blank" rel="noopener noreferrer" title="Open on YouTube" aria-label="Open stream on YouTube">↗</a></div>
+        </article>
+        <aside class="stream-sidebar">
+          <div class="sidebar-top"><span>CHANNEL TRANSMISSION</span><span class="corner-plus">+</span></div>
+          <div class="transmission-emblem"><span class="transmission-icon">◉</span><div><span id="sidebar-state-label">AWAITING SIGNAL</span><strong id="sidebar-state">GET READY<br>TO TUNE IN.</strong></div></div>
+          <p id="sidebar-note" class="sidebar-note">Once the live-sync is connected, this panel automatically updates whenever MaskManUG goes live.</p>
+          <div class="sidebar-rule"></div>
+          <div class="sidebar-stat"><span>CHANNEL</span><strong>@MASKMANUG</strong></div>
+          <div class="sidebar-stat"><span>PRIMARY GAME</span><strong>GTA V / ROLEPLAY</strong></div>
+          <div class="sidebar-stat"><span>STREAM STATUS</span><strong id="sidebar-status-short">NOT CONFIGURED</strong></div>
+          <a class="sidebar-youtube" href="https://www.youtube.com/@MaskManUG" id="sidebar-channel-link" target="_blank" rel="noopener noreferrer">VISIT YOUTUBE CHANNEL <span>↗</span></a>
+          <div class="side-footer">POWERED BY THE COMMUNITY <span>✳</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="videos-section container" id="videos">
+      <div class="section-heading video-section-head"><div><span class="section-kicker">// FRESH FROM THE CHANNEL</span><h2>LATEST <em>DROPS</em><span class="small-star">✳</span></h2></div><a id="view-all" class="text-link" href="https://www.youtube.com/@MaskManUG/videos" target="_blank" rel="noopener noreferrer">VIEW ALL VIDEOS <span>↗</span></a></div>
+      <div class="video-grid" id="video-grid" aria-live="polite">
+        <div class="video-placeholder"><span class="placeholder-number">01 /</span><div class="placeholder-graphic">▶</div><strong>RECENT CONTENT<br>COMING THROUGH.</strong><p>Connect the channel data to see videos here.</p></div>
+        <div class="video-placeholder"><span class="placeholder-number">02 /</span><div class="placeholder-graphic">✳</div><strong>THE STORIES<br>DON'T STOP.</strong><p>Uploads and streams, all in one place.</p></div>
+        <div class="video-placeholder"><span class="placeholder-number">03 /</span><div class="placeholder-graphic">↗</div><strong>STAY IN<br>THE LOOP.</strong><p>Enable live alerts so you never miss a session.</p></div>
+      </div>
+    </section>
+
+    <section class="community-section" id="community"><div class="container community-inner">
+      <div class="community-left"><span class="section-kicker">// YOUR PEOPLE ARE HERE</span><h2>NOT JUST<br>A STREAM.<br><em>A WHOLE VIBE.</em></h2><p>The inside jokes. The chaotic GTA RP moments. The people who show up every time. It's always better when you're here.</p><div class="community-buttons"><a class="button button-white" id="community-discord" href="https://discord.gg/MFb7kBAjvv" target="_blank" rel="noopener noreferrer">JOIN THE DISCORD ↗</a><a class="button button-light-outline" id="community-instagram" href="https://www.instagram.com/maskmanug/" target="_blank" rel="noopener noreferrer">FOLLOW ON INSTAGRAM ↗</a></div></div>
+      <div class="community-right"><div class="community-big">UG<span>!</span></div><div class="community-ring"></div><div class="community-label">WELCOME TO THE CREW // 2026</div></div>
+    </div></section>
+
+    <section class="app-section container" id="get-app"><div class="app-panel"><div class="app-icon-preview"><div class="app-icon-square"><span>MM</span><small>UG</small></div><div class="app-mini-badge">★ YOUR HOME SCREEN, UPGRADED.</div></div><div class="app-copy"><span class="section-kicker">// ALWAYS ONE TAP AWAY</span><h2>TAKE THE STREAM<br><em>WITH YOU.</em></h2><p>Install MaskManUG like an app. Get quick access to the channel and optional notifications when the stream goes live.</p><div class="app-buttons"><button type="button" id="install-main" class="button button-primary">+ ADD TO HOME SCREEN <span>↗</span></button><button type="button" id="alerts-main" class="button button-outline">◉ LIVE NOTIFICATIONS</button></div><p id="install-hint" class="install-hint">Works as a PWA on compatible Android, iPhone, and desktop browsers.</p></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div><a href="#top" class="footer-logo">MASKMAN<span>UG.</span></a><p>GOOD PEOPLE. GOOD CHAT. GOOD VIBES.</p></div><div class="footer-links"><a id="footer-youtube" href="https://www.youtube.com/@MaskManUG" target="_blank" rel="noopener noreferrer">YOUTUBE ↗</a><a id="footer-instagram" href="https://www.instagram.com/maskmanug/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a id="footer-discord" href="https://discord.gg/MFb7kBAjvv" target="_blank" rel="noopener noreferrer">DISCORD ↗</a><a id="footer-twitch" href="https://www.twitch.tv/maskmanug" target="_blank" rel="noopener noreferrer">TWITCH ↗</a><a id="footer-kick" href="#" target="_blank" rel="noopener noreferrer" hidden>KICK ↗</a></div></div><div class="container copyright"><span>© <span id="copyright-year">2026</span> MASKMANUG. BUILT FOR THE COMMUNITY.</span><span>PLAY HARD. STAY GORIB. <b>✳</b></span></div></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden><span id="toast-message"></span><button type="button" id="toast-close" aria-label="Dismiss">×</button></div>
+  <dialog id="help-dialog" class="help-dialog"><button type="button" class="dialog-close" id="dialog-close" aria-label="Close">×</button><span class="section-kicker">// EASY SETUP</span><h2 id="dialog-title">Add to your home screen</h2><div id="dialog-content"></div><button type="button" class="button button-primary dialog-done" id="dialog-done">GOT IT ↗</button></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
